@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+ 
+}
+body {
+  background-color: cadetblue;
+  position:relative;
+}
+.cards {
+  display:flex;
+  justify-content:space-around;
+  margin:10px auto;
+  flex-wrap: wrap;
+}
+.card {
+  background-color:antiquewhite;
+  margin-right:5px;
+  margin-bottom:10px;
+  min-width:200px;
+  box-shadow:black 3px 0px 8px;
+  border-top:5px solid antiquewhite;
+  transition:1s;
+  border-radius:5px;
+  
+}
+.card:hover {
+  border-top:5px solid green;
+  box-shadow:black 3px 5px 8px;
+}
+.card h2 {
+  color:red;
+  font-size:small;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.card p {
+  font-weight:bold;
+}
+.select {
+  background-color:inherit;
+  width:100px;
+  padding:0.2rem 0.5rem;
+  font-weight:500;
+  border:2px solid black;
+  outline:none;
+  border-radius:5px;
+  align-self:center;
+}
+.app_header {
+  display:flex;
+  justify-content: space-around;
+  background-color:aqua;
+  padding:5px;
+  align-items: center;
+}
+.app_header h1 {
+  color:darkolivegreen;
+  margin:0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.title { 
+  display:flex;
+  align-items: center;
+}
+.logo {
+  width:50px;
+  height:50px;
+  align-self:center;
+  animation-name:rotation;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.infobox_content {
+}
+.infobox_title {
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  color:crimson;
+  text-shadow: 2px 3px 3px black, 0 0 5px black;
+}
+.table {
+  height:300px;
+  display:inline-block;
+  margin:3px auto;
+  overflow-y:scroll;
+  text-align: left;
+  background-color:aqua;
+  width:250px;
+  /* padding-left:5px; */
+}
+.table tr { 
+  display:flex;
+  justify-content: space-between;
+  padding:5px;
+}
+.table tr:nth-child(odd) {
+  background-color:blueviolet
+}
+ul {
+  display:flex;
+  justify-content: center;
+  list-style-type: none;
+  padding:0;
+}
+li {
+  background-color:darkgreen;
+  margin-right:10px;
+  padding:2px;
+  border-radius:4px;
+
+}
+li:hover {
+  opacity:0.8;
+}
+.app_data {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+}
+.graph {
+  width:300px;
+  height:300px;
+  align-self: center;
+}
